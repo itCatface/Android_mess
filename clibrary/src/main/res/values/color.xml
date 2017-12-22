@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white">#fff</color>
+    <color name="blue">#00f</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="primaryText">@color/primary_text_default_material_light</color>
+
+    <color name="red500">#F44336</color>
+    <color name="blue500">#2196f3</color>
+    <color name="orange500">#FF9800</color>
+
+    <!-- ad banner 底部标题背景 -->
+    <color name="banner_title_bg">#22000000</color>
+
+
+</resources>

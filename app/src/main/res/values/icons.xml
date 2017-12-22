@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_location_arrow">&#xf124;</string>
+    <string name="fa_chevron_left">&#xf053;</string>
+    <string name="fa_plus">&#xf067;</string>
+    <string name="fa_reorder">&#xf0c9;</string>
+    <string name="fa_arrow_up">&#xf062;</string>
+    <string name="fa_refresh">&#xf021;</string>
+</resources>

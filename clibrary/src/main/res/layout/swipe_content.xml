@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_note"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="?android:colorBackground"
+    android:foreground="?listChoiceBackgroundIndicator">
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="十月九号"
+        android:textColor="#3000"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="sawfadfa啊我佛我佛那份啊大开发可能呢阿道夫那份啊大分i阿斯蒂芬我"
+        android:textSize="18sp"/>
+
+</FrameLayout>

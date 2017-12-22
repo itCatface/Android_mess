@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="white">#FFFFFF</color>
+
+
+
+
+    <color name="pmQuality6">#9962001E</color>
+    <color name="pmQuality5">#99970454</color>
+    <color name="pmQuality4">#99FE0000</color>
+    <color name="pmQuality3">#99FE8800</color>
+    <color name="pmQuality2">#99FBD029</color>
+    <color name="pmQuality1">#996BCD07</color>
+
+</resources>

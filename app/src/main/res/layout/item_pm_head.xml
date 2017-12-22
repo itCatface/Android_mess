@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_head"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bt_default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#1f00"
+        android:text="默认排序"/>
+
+    <Button
+        android:id="@+id/bt_pm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#10f0"
+        android:text="PM2.5最低"/>
+
+    <Button
+        android:id="@+id/bt_aqi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#100f"
+        android:text="空气质量最好"/>
+
+
+</LinearLayout>

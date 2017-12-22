@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cc.catface.kotlin.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_main"
+            android:text="1"
+            android:textColor="@drawable/selector_bt_main_txt"/>
+
+        <Button
+            android:id="@+id/bt_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_bottom_bt_margin_left"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_main"
+            android:text="搞笑"
+            android:textColor="@drawable/selector_bt_main_txt"/>
+
+        <Button
+            android:id="@+id/bt_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_bottom_bt_margin_left"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_main"
+            android:text="美图"
+            android:textColor="@drawable/selector_bt_main_txt"/>
+
+        <Button
+            android:id="@+id/bt_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_bottom_bt_margin_left"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_main"
+            android:text="4"
+            android:textColor="@drawable/selector_bt_main_txt"/>
+
+        <Button
+            android:id="@+id/bt_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_bottom_bt_margin_left"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_main"
+            android:text="5"
+            android:textColor="@drawable/selector_bt_main_txt"/>
+
+        <Button
+            android:id="@+id/bt_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_bottom_bt_margin_left"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_main"
+            android:text="6"
+            android:textColor="@drawable/selector_bt_main_txt"/>
+
+    </LinearLayout>
+</RelativeLayout>
