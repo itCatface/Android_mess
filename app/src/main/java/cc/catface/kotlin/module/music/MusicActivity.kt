@@ -14,8 +14,7 @@ import kotlinx.android.synthetic.main.activity_music.*
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class MusicActivity : BaseActivity() {
-    override fun layoutId() = R.layout.activity_music
+class MusicActivity : BaseActivity(R.layout.activity_music) {
 
     private val tabs = arrayOf("歌曲", "歌手", "专辑")
     val fms = arrayOf(MusicSongFm(), MusicArtistFm(), MusicAlbumFm())

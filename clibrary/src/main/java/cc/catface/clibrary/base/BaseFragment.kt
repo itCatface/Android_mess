@@ -9,11 +9,11 @@ import android.view.ViewGroup
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-abstract class BaseFragment : Fragment() {
+abstract class BaseFragment(val layoutId: Int) : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
-        return inflater!!.inflate(layoutId(), container, false)
+        return inflater.inflate(layoutId, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -21,7 +21,5 @@ abstract class BaseFragment : Fragment() {
         viewCreated()
     }
 
-    abstract fun layoutId(): Int
     abstract fun viewCreated()
-
 }

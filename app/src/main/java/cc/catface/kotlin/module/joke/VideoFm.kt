@@ -6,8 +6,7 @@ import cc.catface.kotlin.R
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class VideoFm:BaseFragment() {
-    override fun layoutId() = R.layout.fragment_video
+class VideoFm:BaseFragment(R.layout.fragment_video) {
 
     override fun viewCreated() {
 

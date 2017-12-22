@@ -8,10 +8,7 @@ import kotlinx.android.synthetic.main.activity_music_playing.*
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class MusicPlayingActivity:BaseActivity(), View.OnClickListener {
-
-
-    override fun layoutId() = R.layout.activity_music_playing
+class MusicPlayingActivity:BaseActivity(R.layout.activity_music_playing), View.OnClickListener {
 
     override fun create() {
         initView()

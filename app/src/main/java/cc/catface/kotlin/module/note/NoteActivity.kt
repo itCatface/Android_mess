@@ -17,11 +17,11 @@ import cc.catface.clibrary.util.view.recyclerview.divider.ItemDecorationDivider
 import cc.catface.clibrary.util.view.recyclerview.drag.DragItemCallback
 import cc.catface.clibrary.util.view.recyclerview.drag.OnDragItemClickListener
 import cc.catface.clibrary.util.view.recyclerview.swipe.SwipeItemListener
-import cc.catface.kotlin.App
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.Note
 import cc.catface.kotlin.domain.greendao_gen.NoteDao
 import cc.catface.kotlin.engine.adapters.NoteAdapter
+import cc.catface.kotlin.navigator.App
 import cc.catface.kotlin.view.group.WeatherTopView
 import kotlinx.android.synthetic.main.activity_note.*
 import org.jetbrains.anko.find
@@ -33,14 +33,13 @@ import kotlin.collections.ArrayList
  *
  * layoutPosition[notifyDataSetChanged后不能立即获取，需等布局结束后才能获取] & adapterPosition可以立刻获取最新的position
  */
-class NoteActivity : BaseActivity() {
-    override fun layoutId() = R.layout.activity_note
+class NoteActivity : BaseActivity(R.layout.activity_note) {
 
     private var mData: MutableList<Note>? = ArrayList()
     private var mAdapter: NoteAdapter? = null
     val layoutManager = LinearLayoutManager(this)
 
-    var noteDao: NoteDao? = null
+    private var noteDao: NoteDao? = null
 
     override fun create() {
         initData()

@@ -16,8 +16,7 @@ import org.jetbrains.anko.uiThread
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class MusicSongFm : BaseFragment() {
-    override fun layoutId() = R.layout.fragment_music_song
+class MusicSongFm : BaseFragment(R.layout.fragment_music_song) {
 
     private var mData: MutableList<Song>? = null
 

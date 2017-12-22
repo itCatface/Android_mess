@@ -9,14 +9,14 @@
         tools:ignore="ProtectedPermissions"/>
 
     <application
-        android:name=".App"
+        android:name=".navigator.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".navigator.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -40,11 +40,9 @@
         </activity>
         <activity android:name=".module.kaiyan.ui.KYSplashActivity">
         </activity>
-        <activity
-            android:name=".module.kaiyan.base.KYBaseActivity"
-            android:label="@string/title_activity_kybase"
-            android:theme="@style/AppTheme">
+        <activity android:name=".module.function.ad.AdActivity">
         </activity>
+        <activity android:name="cc.catface.kotlin.module.function.server.ServerActivity"/>
     </application>
 
 </manifest>

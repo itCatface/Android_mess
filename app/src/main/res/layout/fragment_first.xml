@@ -9,30 +9,6 @@
     android:orientation="vertical">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
-
-        <cc.catface.clibrary.util.view.viewpager.banner.RecyclerViewBannerNormal
-            android:id="@+id/banner"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:orientation="horizontal"/>
-
-        <TextView
-            android:textSize="24sp"
-            android:textColor="#fff"
-            android:id="@+id/tv_title"
-            android:layout_marginBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:text="测试1"/>
-
-    </RelativeLayout>
-
-
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
@@ -50,19 +26,34 @@
         android:text="测试"/>
 
     <Button
-        android:id="@+id/bt_once"
+        android:id="@+id/bt_pm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="一次"/>
-
+        android:text="空气质量"/>
 
     <Button
-        android:id="@+id/bt_weather"
+        android:id="@+id/bt_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="天气预报"/>
+        android:text="备忘录"/>
 
+    <Button
+        android:id="@+id/bt_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="banner"/>
 
+    <Button
+        android:id="@+id/bt_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="server"/>
+
+    <Button
+        android:id="@+id/bt_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="待"/>
 
 
 </LinearLayout>

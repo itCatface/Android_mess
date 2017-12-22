@@ -10,10 +10,10 @@ import java.net.URL
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-public object DataEngine {
+object DataEngine {
 
 
-    /**
+    /****************************************************************************易源数据
      * 笑话大全
      */
     fun getJokeData(page: Int, maxResult: Int = 10) = Gson().fromJson(URL(Constant.yyXHDQ(page, maxResult)).readText(), JokeResult::class.java).showapi_res_body.contentlist
@@ -82,10 +82,8 @@ public object DataEngine {
     fun getPmCityData(city: String = "合肥") = Gson().fromJson(URL(Constant.yyPMCity(city)).readText(), PmCityResult::class.java).showapi_res_body
 
 
-    /**
+    /******************************************************************************谷歌API
      * 所在省市
      */
     fun localCity() = JSONObject(URL(Constant.URL_LOCAL()).readText()).optString("city")
-
-
 }

@@ -1,11 +1,12 @@
-package cc.catface.kotlin.module.server;
+package cc.catface.kotlin.module.function.server;
+
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 import fi.iki.elonen.NanoHTTPD;
-
+import fi.iki.elonen.NanoHTTPD.Response.IStatus;
 
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
@@ -18,7 +19,7 @@ public class NanoHTTPDServer extends NanoHTTPD {
         super(port);
     }
 
-    public enum Status implements NanoHTTPD.Response.IStatus {
+    public enum Status implements IStatus {
 
         SWITCH_PROTOCOL(101, "Switching Protocols"), NOT_USE_POST(777, "not use post"), EXCEPTION(5000, "NanoHTTPD server exception");
 

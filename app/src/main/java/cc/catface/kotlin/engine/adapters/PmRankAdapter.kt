@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
-import cc.catface.kotlin.App
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.PmRank
+import cc.catface.kotlin.navigator.App
 import org.jetbrains.anko.find
 import java.util.*
 

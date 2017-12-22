@@ -25,12 +25,11 @@ import java.util.*
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class PmActivity : BaseActivity() {
+class PmActivity : BaseActivity(R.layout.activity_pm) {
 
     private var mData = ArrayList<PmRank>()
     private var layoutManager: LinearLayoutMangerScrollSpeed? = null
 
-    override fun layoutId() = R.layout.activity_pm
 
     override fun create() {
         initView()

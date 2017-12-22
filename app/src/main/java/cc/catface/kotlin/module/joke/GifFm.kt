@@ -17,17 +17,13 @@ import kotlin.properties.Delegates
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class GifFm : BaseFragment() {
-
+class GifFm : BaseFragment(R.layout.fragment_gif) {
 
     private var mData = ArrayList<Gif>()
     private var mPage = 1
     private var mLoading by Delegates.observable(true) { _, _, new ->
         srl_gif.isRefreshing = new
     }
-
-
-    override fun layoutId() = R.layout.fragment_gif
 
 
     override fun viewCreated() {

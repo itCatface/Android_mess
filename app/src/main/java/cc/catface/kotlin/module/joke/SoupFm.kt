@@ -18,8 +18,7 @@ import kotlin.properties.Delegates
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class SoupFm : BaseFragment() {
-
+class SoupFm : BaseFragment(R.layout.fragment_soup) {
 
     companion object {
         val SPEED_RATIO = 0.691f    // RecyclerView滑动速率
@@ -31,9 +30,6 @@ class SoupFm : BaseFragment() {
     private var mLoading by Delegates.observable(true) { _, _, new ->
         srl_soup.isRefreshing = new
     }
-
-
-    override fun layoutId() = R.layout.fragment_soup
 
 
     override fun viewCreated() {

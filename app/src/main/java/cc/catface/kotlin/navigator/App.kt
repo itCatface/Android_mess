@@ -1,4 +1,4 @@
-package cc.catface.kotlin
+package cc.catface.kotlin.navigator
 
 import android.annotation.SuppressLint
 import android.app.Application

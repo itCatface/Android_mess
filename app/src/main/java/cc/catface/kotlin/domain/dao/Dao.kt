@@ -7,5 +7,5 @@ import cc.catface.kotlin.domain.greendao_gen.DaoMaster
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 object Dao {
-    fun noteDao(ctx: Context) = DaoMaster(DaoMaster.DevOpenHelper(ctx, "note-db", null).writableDatabase).newSession().noteDao
+    fun noteDao(ctx: Context) = DaoMaster(DaoMaster.DevOpenHelper(ctx, "note-db", null).writableDatabase).newSession().noteDao!!
 }

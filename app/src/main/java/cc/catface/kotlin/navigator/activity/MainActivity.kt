@@ -1,4 +1,4 @@
-package cc.catface.kotlin
+package cc.catface.kotlin.navigator.activity
 
 import android.animation.Animator
 import android.animation.AnimatorSet
@@ -8,7 +8,8 @@ import android.widget.Button
 import cc.catface.clibrary.base.BaseActivity
 import cc.catface.clibrary.d
 import cc.catface.clibrary.replace
-import cc.catface.kotlin.fm.*
+import cc.catface.kotlin.R
+import cc.catface.kotlin.navigator.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -17,13 +18,10 @@ import org.greenrobot.eventbus.ThreadMode
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class MainActivity : BaseActivity(), View.OnClickListener {
-
-
-    override fun layoutId() = R.layout.activity_main
+class MainActivity : BaseActivity(R.layout.activity_main), View.OnClickListener {
 
     private val mFragments = arrayOf(FirstFm(), SecondFm(), ThirdFm(), FourthFm(), FifthFm())
-    var mMainTabs: Array<Button>? = null
+    private var mMainTabs: Array<Button>? = null
 
     @Subscribe(threadMode = ThreadMode.MAIN, sticky = true) fun onEvent(event: String) {
 
@@ -87,7 +85,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
     private fun initView() {
         mMainTabs = arrayOf(bt_1, bt_2, bt_3, bt_4, bt_5)
 
-        supportFragmentManager.beginTransaction().add(R.id.fl, mFragments[0], mFragments[0].javaClass.name.substring(mFragments[0].javaClass.name.lastIndexOf(".") + 1)).show(mFragments[0]).commit()
+        supportFragmentManager.beginTransaction().add(R.id.fl, mFragments[0], mFragments[0].javaClass.name.substring(mFragments[0].javaClass.name.lastIndexOf("") + 1)).show(mFragments[0]).commit()
         mMainTabs!![0].isSelected = true
     }
 
@@ -111,7 +109,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
             transaction.hide(mFragments[currentIndex])
 
             if (!mFragments[selectedIndex].isAdded)
-                transaction.add(R.id.fl, mFragments[selectedIndex], mFragments[selectedIndex].javaClass.name.substring(mFragments[0].javaClass.name.lastIndexOf(".") + 1))
+                transaction.add(R.id.fl, mFragments[selectedIndex], mFragments[selectedIndex].javaClass.name.substring(mFragments[0].javaClass.name.lastIndexOf("") + 1))
 
             transaction.show(mFragments[selectedIndex]).commit()
 

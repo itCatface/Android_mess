@@ -1,4 +1,4 @@
-package cc.catface.kotlin.fm
+package cc.catface.kotlin.navigator.fragment
 
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
@@ -11,10 +11,9 @@ import kotlinx.android.synthetic.main.fragment_third.*
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class ThirdFm : BaseFragment() {
-    private val tabs = mutableListOf("小清新" to 35, "文艺范" to 36, "大胸妹" to 34, "大长腿" to 38, "小翘臀" to 40, "性感妹" to 37, "黑丝袜" to 39)
+class ThirdFm : BaseFragment(R.layout.fragment_third) {
 
-    override fun layoutId() = R.layout.fragment_third
+    private val tabs = mutableListOf("小清新" to 35, "文艺范" to 36, "大胸妹" to 34, "大长腿" to 38, "小翘臀" to 40, "性感妹" to 37, "黑丝袜" to 39)
 
     override fun viewCreated() {
         vp_third.offscreenPageLimit = tabs.size // 不加左右滑动几下就会爆炸

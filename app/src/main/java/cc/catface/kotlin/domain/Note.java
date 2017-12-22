@@ -6,6 +6,8 @@ import org.greenrobot.greendao.annotation.Keep;
 
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ *
+ * @desc 需支持greendao
  */
 @Entity
 public class Note {

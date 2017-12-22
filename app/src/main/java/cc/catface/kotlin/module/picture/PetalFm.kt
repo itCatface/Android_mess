@@ -31,7 +31,7 @@ import kotlin.properties.Delegates
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class PetalFm : BaseFragment() {
+class PetalFm : BaseFragment(R.layout.fragment_petal) {
 
     private var mType: Int = 0
     private var mData = ArrayList<Petal>()
@@ -40,8 +40,6 @@ class PetalFm : BaseFragment() {
         srl_pic.isRefreshing = new
     }
 
-
-    override fun layoutId() = R.layout.fragment_petal
 
     override fun viewCreated() {
         mType = arguments!!.getInt(TYPE)

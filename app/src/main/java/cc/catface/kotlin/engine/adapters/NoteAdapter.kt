@@ -14,9 +14,9 @@ import cc.catface.clibrary.util.sensor.VibratorT
 import cc.catface.clibrary.util.view.recyclerview.drag.DragItemCallback
 import cc.catface.clibrary.util.view.recyclerview.swipe.SwipeItemLayout
 import cc.catface.clibrary.util.view.recyclerview.swipe.SwipeItemListener
-import cc.catface.kotlin.App
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.Note
+import cc.catface.kotlin.navigator.App
 import org.jetbrains.anko.find
 import java.text.SimpleDateFormat
 import java.util.*

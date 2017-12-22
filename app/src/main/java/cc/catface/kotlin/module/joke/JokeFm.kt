@@ -17,15 +17,14 @@ import kotlin.properties.Delegates
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class JokeFm : BaseFragment() {
+class JokeFm : BaseFragment(R.layout.fragment_joke) {
 
     private var mData = ArrayList<Joke>()
     private var mPage = 1
+
     private var mLoading by Delegates.observable(true) { _, _, new ->
         srl_joke.isRefreshing = new
     }
-
-    override fun layoutId() = R.layout.fragment_joke
 
     override fun viewCreated() {
         initView()

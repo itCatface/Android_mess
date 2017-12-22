@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/clibrary" />
             <option value="$PROJECT_DIR$/indexlib" />
+            <option value="$PROJECT_DIR$/mvpfirst" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

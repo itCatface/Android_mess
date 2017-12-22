@@ -17,9 +17,7 @@ import java.util.*
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class ChoseCityNormalActivity : BaseActivity() {
-    override fun layoutId() = R.layout.activity_chose_city
-
+class ChoseCityNormalActivity : BaseActivity(R.layout.activity_chose_city) {
 
     private var mManager: LinearLayoutManager = LinearLayoutManager(this)
     private var mAdapter: CityAdapter? = CityAdapter()
