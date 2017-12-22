@@ -7,7 +7,7 @@ import android.os.Binder
 import android.os.IBinder
 
 /**
- * Created by catfaceWYH --> tel|wechat|qq 13012892925
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class MusicService : Service {
 

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 abstract class BaseFragment : Fragment() {
 

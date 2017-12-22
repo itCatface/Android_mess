@@ -2,12 +2,14 @@ package cc.catface.clibrary.util
 
 import android.content.Context
 import android.util.DisplayMetrics
-import android.view.WindowManager
 import android.util.TypedValue
+import android.view.WindowManager
 
 
 
-
+/**
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ */
 object ScreenT {
 
     internal var height = 0

@@ -9,7 +9,7 @@ import cc.catface.kotlin.R
 import org.jetbrains.anko.find
 
 /**
- * Created by catfaceWYH --> tel|wechat|qq 13012892925
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class ChoseCityAdapter(val mData: List<String>) : RecyclerView.Adapter<ChoseCityAdapter.ChoseCityHolder>() {
     override fun getItemCount() = mData.size

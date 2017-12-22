@@ -20,7 +20,7 @@ import java.net.URL
 import java.util.concurrent.TimeUnit
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 object RxJavaT {
 

@@ -6,16 +6,20 @@ import cc.catface.clibrary.base.BaseActivity
 import cc.catface.clibrary.t
 import cc.catface.kotlin.R
 import cc.catface.kotlin.engine.DataEngine
-import cc.catface.kotlin.view.group.WeatherTopView
 import cc.catface.kotlin.module.weather.indexbarsupport.CityAdapter
 import cc.catface.kotlin.module.weather.indexbarsupport.CityBean
 import cc.catface.kotlin.module.weather.indexbarsupport.DividerItemDecoration
+import cc.catface.kotlin.view.group.WeatherTopView
 import com.mcxtzhang.indexlib.suspension.SuspensionDecoration
 import kotlinx.android.synthetic.main.activity_chose_city.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import java.util.*
 
+
+/**
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ */
 class ChoseCityWeixinActivity : BaseActivity() {
     override fun layoutId() = R.layout.activity_chose_city
 

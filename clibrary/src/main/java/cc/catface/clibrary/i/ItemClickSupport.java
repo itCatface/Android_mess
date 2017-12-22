@@ -6,9 +6,8 @@ import android.view.View;
 import cc.catface.clibrary.R;
 
 /**
- * http://blog.csdn.net/itcatface/article/details/77865013
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-
 public class ItemClickSupport {
     private final RecyclerView mRecyclerView;
     private OnItemClickListener mOnItemClickListener;

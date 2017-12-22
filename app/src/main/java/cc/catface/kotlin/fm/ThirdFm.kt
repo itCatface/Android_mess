@@ -9,7 +9,7 @@ import cc.catface.kotlin.module.picture.PetalFm
 import kotlinx.android.synthetic.main.fragment_third.*
 
 /**
- * Created by Administrator on 2017/11/28/028.
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class ThirdFm : BaseFragment() {
     private val tabs = mutableListOf("小清新" to 35, "文艺范" to 36, "大胸妹" to 34, "大长腿" to 38, "小翘臀" to 40, "性感妹" to 37, "黑丝袜" to 39)

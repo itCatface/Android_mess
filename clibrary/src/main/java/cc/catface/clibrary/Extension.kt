@@ -1,14 +1,12 @@
 package cc.catface.clibrary
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
-import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.util.Log
@@ -19,7 +17,7 @@ import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 val DEBUG = true
 val USE_SOUT = true

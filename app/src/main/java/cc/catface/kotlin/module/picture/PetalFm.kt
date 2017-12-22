@@ -3,22 +3,17 @@ package cc.catface.kotlin.module.picture
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.app.AlertDialog
 import android.app.Dialog
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.widget.Button
 import android.widget.ImageView
 import cc.catface.clibrary.base.BaseFragment
-import cc.catface.clibrary.d
 import cc.catface.clibrary.showSnackbar
 import cc.catface.clibrary.t
 import cc.catface.kotlin.R
@@ -31,11 +26,10 @@ import kotlinx.android.synthetic.main.fragment_petal.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.find
 import org.jetbrains.anko.uiThread
-import java.net.URL
 import kotlin.properties.Delegates
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class PetalFm : BaseFragment() {
 

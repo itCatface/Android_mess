@@ -3,21 +3,20 @@ package cc.catface.kotlin
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.content.Intent
 import android.view.View
 import android.widget.Button
 import cc.catface.clibrary.base.BaseActivity
 import cc.catface.clibrary.d
 import cc.catface.clibrary.replace
 import cc.catface.kotlin.fm.*
-import cc.catface.kotlin.module.weather.PmActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_second.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
-
+/**
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ */
 class MainActivity : BaseActivity(), View.OnClickListener {
 
 

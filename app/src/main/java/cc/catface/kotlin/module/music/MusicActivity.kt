@@ -1,6 +1,5 @@
 package cc.catface.kotlin.module.music
 
-import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.content.ContextCompat
@@ -13,7 +12,7 @@ import cc.catface.kotlin.module.music.fragment.MusicSongFm
 import kotlinx.android.synthetic.main.activity_music.*
 
 /**
- * Created by catfaceWYH --> tel|wechat|qq 13012892925
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class MusicActivity : BaseActivity() {
     override fun layoutId() = R.layout.activity_music

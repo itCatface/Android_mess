@@ -13,8 +13,7 @@ import java.util.regex.Pattern.compile
 
 
 /**
- * Created by wyh
- *
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class JokeAdapter(private val mData: List<Joke>?) : RecyclerView.Adapter<JokeAdapter.JokeHolder>() {
 

@@ -1,13 +1,10 @@
 package cc.catface.clibrary.base
 
-import android.app.Activity
-import android.app.Fragment
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import org.greenrobot.eventbus.EventBus
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 abstract class BaseActivity : AppCompatActivity() {
 

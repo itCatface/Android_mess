@@ -1,7 +1,7 @@
 package cc.catface.kotlin.domain
 
 /**
- * Created by Administrator on 2017/12/5/005.
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 
 data class PmRankResult(

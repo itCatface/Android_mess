@@ -1,7 +1,7 @@
 package cc.catface.kotlin.domain
 
 /**
- * Created by yhao on 17-9-8.
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 
 data class JokeResult(val showapi_res_code: String,

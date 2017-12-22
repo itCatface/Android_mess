@@ -10,7 +10,7 @@ import cc.catface.kotlin.domain.Soup
 import org.jetbrains.anko.find
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class SoupAdapter(private val mData: List<Soup>?) : RecyclerView.Adapter<SoupAdapter.SoupHolder>() {
 

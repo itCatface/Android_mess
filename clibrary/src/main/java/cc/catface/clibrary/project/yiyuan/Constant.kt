@@ -1,10 +1,8 @@
 package cc.catface.clibrary.project.yiyuan
 
 /**
- * Created by yhao on 17-9-6.
- *
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-
 class Constant {
     companion object {
 

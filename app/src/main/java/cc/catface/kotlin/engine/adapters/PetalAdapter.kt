@@ -18,7 +18,7 @@ import com.bumptech.glide.request.RequestListener
 import org.jetbrains.anko.find
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class PetalAdapter(private val datas: List<Petal>?) : RecyclerView.Adapter<PetalAdapter.PetalHolder>() {
 

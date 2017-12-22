@@ -8,7 +8,7 @@ import cc.catface.kotlin.domain.dao.Dao
 import cc.catface.kotlin.domain.greendao_gen.NoteDao
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class App : Application() {
 

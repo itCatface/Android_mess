@@ -23,7 +23,7 @@ import org.greenrobot.eventbus.EventBus
 import org.jetbrains.anko.find
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class JokePicAdapter(private val mData: List<JokePic>?, rv: RecyclerView?) : RecyclerView.Adapter<JokePicAdapter.JokePicHolder>() {
 

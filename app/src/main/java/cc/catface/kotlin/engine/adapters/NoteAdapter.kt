@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class NoteAdapter(val mData: MutableList<Note>?, val rv: RecyclerView, val layoutManager: LinearLayoutManager, private val mItemTouchListener: SwipeItemListener) : RecyclerView.Adapter<NoteAdapter.NoteHolder>(), DragItemCallback.DragItemAdapter {
     private val noteDao = App.noteDao

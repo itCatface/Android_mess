@@ -1,13 +1,12 @@
 package cc.catface.clibrary.util
 
 import android.content.Context
-import android.support.annotation.UiThread
 import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 object LogT {
 

@@ -10,13 +10,12 @@ import cc.catface.kotlin.domain.JokePic
 import cc.catface.kotlin.engine.DataEngine
 import cc.catface.kotlin.engine.adapters.JokePicAdapter
 import kotlinx.android.synthetic.main.fragment_joke_pic.*
-import kotlinx.android.synthetic.main.fragment_petal.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import kotlin.properties.Delegates
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class JokePicFm : BaseFragment() {
 

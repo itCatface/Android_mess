@@ -16,7 +16,7 @@ import org.jetbrains.anko.find
 import java.util.*
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class PmRankAdapter(private var mData: List<PmRank>?, private val rv: RecyclerView?, private val layoutManager: LinearLayoutManager) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

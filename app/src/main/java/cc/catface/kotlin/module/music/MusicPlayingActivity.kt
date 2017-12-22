@@ -6,7 +6,7 @@ import cc.catface.kotlin.R
 import kotlinx.android.synthetic.main.activity_music_playing.*
 
 /**
- * Created by catfaceWYH --> tel|wechat|qq 13012892925
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class MusicPlayingActivity:BaseActivity(), View.OnClickListener {
 

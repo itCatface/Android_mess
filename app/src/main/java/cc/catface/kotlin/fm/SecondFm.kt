@@ -10,7 +10,7 @@ import cc.catface.kotlin.module.joke.*
 import kotlinx.android.synthetic.main.fragment_second.*
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class SecondFm : BaseFragment() {
     override fun layoutId() = R.layout.fragment_second

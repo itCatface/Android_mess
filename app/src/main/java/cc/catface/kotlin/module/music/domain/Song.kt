@@ -1,5 +1,9 @@
 package cc.catface.kotlin.module.music.domain
 
+
+/**
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ */
 class Song {
 
     var fileName: String? = null

@@ -8,7 +8,7 @@ import fi.iki.elonen.NanoHTTPD;
 
 
 /**
- * 小型局域网服务器
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  *
  * @request /libs/nanohttpd-2.3.1-SNAPSHOT.jar
  */

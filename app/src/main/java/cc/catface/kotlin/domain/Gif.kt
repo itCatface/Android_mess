@@ -1,7 +1,7 @@
 package cc.catface.kotlin.domain
 
 /**
- * Created by yhao on 17-9-4.
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 
 data class GifResult(val showapi_res_code: String,

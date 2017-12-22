@@ -26,7 +26,7 @@ import pl.droidsonroids.gif.GifDrawable
 import pl.droidsonroids.gif.GifImageView
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class GifAdapter(private val mData: List<Gif>, private val rv: RecyclerView) : RecyclerView.Adapter<GifAdapter.GifHolder>() {
 

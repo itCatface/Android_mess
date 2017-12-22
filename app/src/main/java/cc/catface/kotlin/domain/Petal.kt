@@ -3,7 +3,7 @@ package cc.catface.kotlin.domain
 import com.google.gson.JsonObject
 
 /**
- * Created by yhao on 17-9-4.
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 
 data class PetalResult(val showapi_res_code: String,

@@ -15,7 +15,7 @@ import org.jetbrains.anko.uiThread
 import kotlin.properties.Delegates
 
 /**
- * Created by wyh
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class GifFm : BaseFragment() {
 

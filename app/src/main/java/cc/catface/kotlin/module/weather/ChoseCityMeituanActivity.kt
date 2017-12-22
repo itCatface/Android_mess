@@ -13,7 +13,9 @@ import kotlinx.android.synthetic.main.activity_chose_city.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 
-
+/**
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ */
 class ChoseCityMeituanActivity : BaseActivity() {
     override fun layoutId() = R.layout.activity_chose_city
 

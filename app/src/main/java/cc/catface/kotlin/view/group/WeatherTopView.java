@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 import cc.catface.kotlin.R;
 
-/**
- * Created by wyh
- */
 
+/**
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ */
 public class WeatherTopView extends RelativeLayout implements View.OnClickListener {
 
     private RelativeLayout rl_root;

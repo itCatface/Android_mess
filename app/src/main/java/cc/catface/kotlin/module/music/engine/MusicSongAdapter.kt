@@ -10,7 +10,7 @@ import cc.catface.kotlin.module.music.domain.Song
 import org.jetbrains.anko.find
 
 /**
- * Created by catfaceWYH --> tel|wechat|qq 13012892925
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class MusicSongAdapter(val mData: List<Song>) : RecyclerView.Adapter<MusicSongAdapter.MusicHolder>() {
 

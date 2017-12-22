@@ -29,8 +29,8 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 /**
- * Created by wyh
- * -
+ * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
+ *
  * layoutPosition[notifyDataSetChanged后不能立即获取，需等布局结束后才能获取] & adapterPosition可以立刻获取最新的position
  */
 class NoteActivity : BaseActivity() {
