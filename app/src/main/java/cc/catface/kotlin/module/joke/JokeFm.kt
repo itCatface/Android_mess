@@ -4,7 +4,7 @@ import android.graphics.Color
 import android.support.v7.widget.LinearLayoutManager
 import android.view.ViewGroup
 import cc.catface.clibrary.base.BaseFragment
-import cc.catface.clibrary.showSnackbar
+import cc.catface.clibrary.util.extension.showSnackbar
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.Joke
 import cc.catface.kotlin.engine.DataEngine
@@ -21,10 +21,10 @@ class JokeFm : BaseFragment(R.layout.fragment_joke) {
 
     private var mData = ArrayList<Joke>()
     private var mPage = 1
-
     private var mLoading by Delegates.observable(true) { _, _, new ->
         srl_joke.isRefreshing = new
     }
+
 
     override fun viewCreated() {
         initView()
@@ -65,7 +65,7 @@ class JokeFm : BaseFragment(R.layout.fragment_joke) {
             uiThread {
                 mLoading = false
 
-                if (null == data) {
+                if (data.isEmpty()) {
                     showSnackbar(view as ViewGroup)
                     return@uiThread
                 }
