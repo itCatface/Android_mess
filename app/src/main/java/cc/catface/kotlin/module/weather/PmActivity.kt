@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.TextView
 import cc.catface.clibrary.base.BaseActivity
 import cc.catface.clibrary.project.yiyuan.Constant
-import cc.catface.clibrary.t
+import cc.catface.clibrary.util.extension.t
 import cc.catface.clibrary.util.net.http.okhttp.full.OHCallback
 import cc.catface.clibrary.util.net.http.okhttp.full.OHT
 import cc.catface.clibrary.util.view.simple.LinearLayoutMangerScrollSpeed
@@ -88,7 +88,8 @@ class PmActivity : BaseActivity(R.layout.activity_pm) {
             val data = DataEngine.getPmRankData()
 
             uiThread {
-                if (null == data) {
+                rl_loading_pm.visibility = View.GONE
+                if (data.isEmpty()) {
                     return@uiThread
                 }
 

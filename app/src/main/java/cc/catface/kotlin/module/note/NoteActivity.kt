@@ -11,7 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import cc.catface.clibrary.base.BaseActivity
-import cc.catface.clibrary.t
+import cc.catface.clibrary.util.extension.t
 import cc.catface.clibrary.util.sensor.VibratorT
 import cc.catface.clibrary.util.view.recyclerview.divider.ItemDecorationDivider
 import cc.catface.clibrary.util.view.recyclerview.drag.DragItemCallback

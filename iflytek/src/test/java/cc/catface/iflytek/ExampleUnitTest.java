@@ -1,4 +1,4 @@
-package cc.catface.clibrary;
+package cc.catface.iflytek;
 
 import org.junit.Test;
 

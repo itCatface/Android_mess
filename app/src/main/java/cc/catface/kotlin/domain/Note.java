@@ -3,6 +3,7 @@ package cc.catface.kotlin.domain;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Keep;
+import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925

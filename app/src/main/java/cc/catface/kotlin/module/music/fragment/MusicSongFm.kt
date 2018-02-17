@@ -3,8 +3,8 @@ package cc.catface.kotlin.module.music.fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import cc.catface.clibrary.base.BaseFragment
-import cc.catface.clibrary.d
-import cc.catface.clibrary.t
+import cc.catface.clibrary.util.extension.d
+import cc.catface.clibrary.util.extension.t
 import cc.catface.kotlin.R
 import cc.catface.kotlin.module.music.domain.Song
 import cc.catface.kotlin.module.music.engine.AudioUtils
@@ -52,7 +52,7 @@ class MusicSongFm : BaseFragment(R.layout.fragment_music_song) {
         rv_music.adapter = MusicSongAdapter(mData!!)
         (rv_music.adapter as MusicSongAdapter).setOnItemCLick(object : MusicSongAdapter.OnItemClickListener {
             override fun onClick(view: View, songName: String) {
-                activity!!.t(songName)
+                t(songName)
             }
         })
     }

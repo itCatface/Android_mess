@@ -34,7 +34,7 @@ class SecondFm : BaseFragment(R.layout.fragment_second) {
     private inner class JokePageAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
         override fun getCount() = tabs.size
 
-        override fun getPageTitle(position: Int) = tabs[position]
+        override fun getPageTitle(position: Int) =tabs[position]
 
         override fun getItem(position: Int) = fms[position]
     }

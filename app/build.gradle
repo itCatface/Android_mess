@@ -12,6 +12,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true    /*64k*/
     }
     buildTypes {
         release {
@@ -36,5 +38,9 @@ dependencies {
     compile 'org.greenrobot:greendao:3.2.2'
     compile project(':clibrary')
     compile project(':indexlib')
+    compile project(':iflytek')
     implementation files('libs/nanohttpd-2.3.1-SNAPSHOT.jar')
+
+    /*64k*/
+    compile 'com.android.support:multidex:1.0.1'
 }

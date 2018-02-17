@@ -6,7 +6,7 @@ import cc.catface.mvpfirst.v.IUserView
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class UserPresenter(val view:IUserView):IUserPresenter {
+class UserPresenter(private val view: IUserView) : IUserPresenter {
 
     private val mUserModel = UserModel()
 

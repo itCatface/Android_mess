@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="cc.catface.kotlin.module.function.iflytek.IflytekActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:text="网易旗下利用大数据技术提供移动互联网应用的子公司,过去8年,先后推出有道词典、有道翻译官、有道云笔记、惠惠网、有道推广、有道精品课、有道口语大师等系列产品"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_start_tts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播报"/>
+
+        <Button
+            android:id="@+id/bt_pause_tts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"/>
+
+        <Button
+            android:id="@+id/bt_stop_tts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停播"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_public_recognize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公有云识别"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_private_recognize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="私有云识别"/>
+
+        <Button
+            android:id="@+id/bt_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="持续识别"/>
+
+        <Button
+            android:id="@+id/bt_not_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一次性识别"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_stop_recognize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止识别"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_tts_msc"
+            android:text="公有云"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_tts_msc_xtts"
+            android:text="公有云xtts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_tts_aip"
+            android:text="私有云"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:text="退出"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:hint="识别结果"
+        android:id="@+id/tv_recognize_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

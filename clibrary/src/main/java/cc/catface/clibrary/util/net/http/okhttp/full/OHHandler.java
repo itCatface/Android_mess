@@ -11,7 +11,7 @@ public class OHHandler extends Handler {
     static final int MESSAGE_REQUEST_FAILURE = 2;   // request server failure
 
 
-    public OHHandler(Looper looper) {
+    OHHandler(Looper looper) {
         super(looper);
     }
 

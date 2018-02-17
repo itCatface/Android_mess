@@ -4,7 +4,7 @@ import android.graphics.Color
 import android.support.v7.widget.LinearLayoutManager
 import android.view.ViewGroup
 import cc.catface.clibrary.base.BaseFragment
-import cc.catface.clibrary.showSnackbar
+import cc.catface.clibrary.util.extension.showSnackbar
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.Gif
 import cc.catface.kotlin.engine.DataEngine
@@ -65,7 +65,7 @@ class GifFm : BaseFragment(R.layout.fragment_gif) {
 
             uiThread {
                 mLoading = false
-                if (null == data) {
+                if (data.isEmpty()) {
                     showSnackbar(view as ViewGroup)
                     return@uiThread
                 }

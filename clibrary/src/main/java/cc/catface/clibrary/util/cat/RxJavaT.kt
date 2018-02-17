@@ -36,7 +36,7 @@ object RxJavaT {
                 emitter.onNext(i)
             }
         }
-
+// TODO d
         val observer = object : Observer<Int> {
 
             var disposable: Disposable? = null
@@ -107,7 +107,7 @@ object RxJavaT {
         observable.subscribeOn(Schedulers.newThread())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .doOnNext(Consumer { t -> LogT.d("doOnNext's start thread is: " + Thread.currentThread().name) })
+                .doOnNext(Consumer { t -> LogT.d("doOnNext's startIntent thread is: " + Thread.currentThread().name) })
                 .observeOn(Schedulers.newThread())
                 .doOnNext(Consumer { t -> LogT.d("doOnNext's end thread is: " + Thread.currentThread().name) })
                 .subscribe(consumer)

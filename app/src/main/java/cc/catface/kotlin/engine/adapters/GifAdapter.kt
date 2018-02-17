@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.TextView
-import cc.catface.clibrary.d
 import cc.catface.clibrary.util.ScreenT
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.Gif

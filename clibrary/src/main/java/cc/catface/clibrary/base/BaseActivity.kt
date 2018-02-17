@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-abstract class BaseActivity(val layoutId: Int) : AppCompatActivity() {
+abstract class BaseActivity(private val layoutId: Int) : AppCompatActivity() {
 
     /**------------------------- life cycle of activity -------------------------*/
     override fun onCreate(savedInstanceState: Bundle?) {

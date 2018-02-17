@@ -1,7 +1,7 @@
 package cc.catface.kotlin.module.function.ad
 
 import cc.catface.clibrary.base.BaseActivity
-import cc.catface.clibrary.t
+import cc.catface.clibrary.util.extension.t
 import cc.catface.clibrary.util.view.viewpager.banner.RecyclerViewBannerBase
 import cc.catface.kotlin.R
 import kotlinx.android.synthetic.main.activity_ad.*
@@ -36,7 +36,7 @@ class AdActivity : BaseActivity(R.layout.activity_ad) {
             }
 
         }, RecyclerViewBannerBase.OnBannerScrolledListener { position ->
-                tv_2.text = titleList[position % titleList.size]
+            tv_2.text = titleList[position % titleList.size]
 
         })
 

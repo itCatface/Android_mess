@@ -3,7 +3,7 @@ package cc.catface.kotlin.module.weather
 import android.content.Intent
 import android.support.v7.widget.LinearLayoutManager
 import cc.catface.clibrary.base.BaseActivity
-import cc.catface.clibrary.t
+import cc.catface.clibrary.util.extension.t
 import cc.catface.kotlin.R
 import cc.catface.kotlin.engine.DataEngine
 import cc.catface.kotlin.module.weather.indexbarsupport.*

@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import cc.catface.clibrary.d
 import cc.catface.clibrary.util.ScreenT
+import cc.catface.clibrary.util.extension.d
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.JokePic
 import com.bumptech.glide.Glide

@@ -1,4 +1,4 @@
-package cc.catface.clibrary
+package cc.catface.clibrary.util.extension
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,23 +8,13 @@ import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
-import android.text.TextUtils
-import android.util.Log
 import android.view.ViewGroup
-import android.widget.Toast
-import cc.catface.clibrary.util.LogT.d
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-val DEBUG = true
-val USE_SOUT = true
-val DEFAULT_TAG = "catface_debug"
-
-fun Context.toast(msg: CharSequence) = Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
-
 fun AppCompatActivity.replace(id: Int, fm: Fragment, tag: String = "default") {
     val transaction = supportFragmentManager.beginTransaction()
     transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
@@ -36,32 +26,6 @@ fun showSnackbar(viewGroup: ViewGroup, text: String = "加载失败", duration: 
     val snack = Snackbar.make(viewGroup, text, duration)
     snack.view.setBackgroundColor(Color.BLUE)
     snack.show()
-}
-
-
-/**------------------------------------------ 打印(日志&土司) ------------------------------------------*/
-fun Any.d(msg: String) = d(DEFAULT_TAG, msg)
-
-fun Any.d(tag: String, msg: String) {
-    if (DEBUG)
-        if (USE_SOUT) System.out.println(tag + " --> " + msg)
-        else Log.d(tag, msg)
-}
-
-fun Context.t(msg: CharSequence, duration: Int = Toast.LENGTH_SHORT) {
-    if (DEBUG) Toast.makeText(this, msg, duration).show()
-}
-
-
-/* 3. Request */
-fun n(map: Map<String, Any>) = n("", map)
-
-fun n(url: String, map: Map<String, Any>) {
-    if (DEBUG) {
-        if (!TextUtils.isEmpty(url)) d("url -> $url")
-
-        for ((k, v) in map) d("$k -> $v")
-    }
 }
 
 
@@ -136,6 +100,34 @@ private class Preference<T>(val context: Context, val name: String, val default:
         }.apply()
     }
 }
+
+
+/******************************************* PART TWO --> ANDROID ************************************************/
+val SP_PATH = "spConfig"
+
+fun Context.putInt(key: String, value: Int = 0) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().putInt(key, value).apply()
+
+fun Context.getInt(key: String, defValue: Int = 0) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).getInt(key, defValue)
+
+fun Context.putLong(key: String, value: Long = 0) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().putLong(key, value).apply()
+
+fun Context.getLong(key: String, defValue: Long = 0) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).getLong(key, defValue)
+
+fun Context.putFloat(key: String, value: Float = 0f) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().putFloat(key, value).apply()
+
+fun Context.getFloat(key: String, defValue: Float = 0f) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).getFloat(key, defValue)
+
+fun Context.putBoolean(key: String, value: Boolean = false) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().putBoolean(key, value).apply()
+
+fun Context.getBoolean(key: String, defValue: Boolean = false) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).getBoolean(key, defValue)
+
+fun Context.putString(key: String, value: String = "") = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().putString(key, value).apply()
+
+fun Context.getString(key: String, defValue: String = "") = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).getString(key, defValue)
+
+fun Context.remove(key: String) = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().remove(key).apply()
+
+fun Context.clear() = getSharedPreferences(SP_PATH, Context.MODE_PRIVATE).edit().clear().apply()
 
 
 

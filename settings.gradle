@@ -1,1 +1,1 @@
-include ':app', ':clibrary', ':indexlib', ':mvpfirst'
+include ':app', ':clibrary', ':indexlib', ':mvpfirst', ':cloading', ':iflytek'

@@ -1,9 +1,8 @@
 package cc.catface.mvpfirst
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.text.SpannableStringBuilder
-import cc.catface.clibrary.t
+import cc.catface.clibrary.base.BaseActivity
+import cc.catface.clibrary.util.extension.t
 import cc.catface.mvpfirst.p.UserPresenter
 import cc.catface.mvpfirst.v.IUserView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -11,17 +10,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-class MainActivity : AppCompatActivity(), IUserView {
+class MainActivity : BaseActivity(R.layout.activity_main), IUserView {
 
     private var mUserPresenter: UserPresenter? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+    override fun create() {
         mUserPresenter = UserPresenter(this)
         initEvent()
     }
+
 
     private fun initEvent() {
         bt_save.setOnClickListener { mUserPresenter?.saveUser(getID(), getUsername(), getAge()) }

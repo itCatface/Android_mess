@@ -6,8 +6,8 @@ import android.animation.ObjectAnimator
 import android.view.View
 import android.widget.Button
 import cc.catface.clibrary.base.BaseActivity
-import cc.catface.clibrary.d
-import cc.catface.clibrary.replace
+import cc.catface.clibrary.util.extension.d
+import cc.catface.clibrary.util.extension.replace
 import cc.catface.kotlin.R
 import cc.catface.kotlin.navigator.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*

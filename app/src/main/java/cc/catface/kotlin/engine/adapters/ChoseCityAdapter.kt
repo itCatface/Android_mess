@@ -12,6 +12,7 @@ import org.jetbrains.anko.find
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
 class ChoseCityAdapter(val mData: List<String>) : RecyclerView.Adapter<ChoseCityAdapter.ChoseCityHolder>() {
+
     override fun getItemCount() = mData.size
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int) = ChoseCityHolder(LayoutInflater.from(parent!!.context).inflate(R.layout.item_city, null))
 

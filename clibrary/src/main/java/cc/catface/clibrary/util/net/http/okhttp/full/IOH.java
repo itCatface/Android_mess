@@ -1,8 +1,7 @@
-package cc.catface.clibrary.util.net.http.okhttp;
+package cc.catface.clibrary.util.net.http.okhttp.full;
 
 import java.util.Map;
 
-import cc.catface.clibrary.util.net.http.okhttp.full.OHCallback;
 import okhttp3.Response;
 
 /**

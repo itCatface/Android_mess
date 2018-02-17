@@ -1,5 +1,6 @@
 package cc.catface.kotlin.engine.adapters
 
+import android.annotation.SuppressLint
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,7 @@ class SoupAdapter(private val mData: List<Soup>?) : RecyclerView.Adapter<SoupAda
         val tv: TextView = view.find(R.id.tv_text)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: SoupHolder?, position: Int) {
         holder!!.tv.text = mData?.get(position)?.english + "\n\n" + mData?.get(position)?.chinese
     }

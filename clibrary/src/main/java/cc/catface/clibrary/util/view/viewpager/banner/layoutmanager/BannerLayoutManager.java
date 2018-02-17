@@ -84,7 +84,7 @@ public class BannerLayoutManager extends RecyclerView.LayoutManager implements R
 
 
     /**
-     * @param x start positon of the view you want scale
+     * @param x startIntent positon of the view you want scale
      * @return the scale rate of current scroll mOffset
      */
     private float calculateScale(float x) {
@@ -379,7 +379,7 @@ public class BannerLayoutManager extends RecyclerView.LayoutManager implements R
             }
         }
 
-        //make sure that current position start from 0 to 1
+        //make sure that current position startIntent from 0 to 1
         final int currentPos = getCurrentPositionOffset();
         int start = currentPos - mLeftItems;
         int end = currentPos + mRightItems;
@@ -393,7 +393,7 @@ public class BannerLayoutManager extends RecyclerView.LayoutManager implements R
         float lastOrderWeight = Float.MIN_VALUE;
         for (int i = start; i < end; i++) {
             if (!removeCondition(getProperty(i) - mOffset)) {
-                // start and end zero base on current position,
+                // startIntent and end zero base on current position,
                 // so we need to calculate the adapter position
                 int adapterPosition = i;
                 if (i >= itemCount) {

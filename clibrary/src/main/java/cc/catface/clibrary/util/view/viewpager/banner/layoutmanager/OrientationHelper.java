@@ -148,7 +148,7 @@ public abstract class OrientationHelper {
     public abstract int getDecoratedMeasurementInOther(View view);
 
     /**
-     * Returns the start position of the layout after the start padding is added.
+     * Returns the startIntent position of the layout after the startIntent padding is added.
      *
      * @return The very first pixel we can draw.
      */

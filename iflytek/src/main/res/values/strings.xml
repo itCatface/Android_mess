@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_id">599bdcd9</string>
+    <!--<string name="app_id">5a41c2c0</string>-->
+
+    <!-- params of private cloud recognizer -->
+    <string name="rcg_params">extend_params={"\"params\"":"\"eos=30000,bos=30000\""},appid=pc20onli,url=36.7.172.16:5100/iat/,time_out=30000,svc=iat,auf=audio/L16;rate=16000,aue=raw,type=1,uid=660Y5r</string>
+</resources>

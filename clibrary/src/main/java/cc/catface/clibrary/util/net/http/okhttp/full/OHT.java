@@ -14,7 +14,6 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import cc.catface.clibrary.util.net.http.Config;
-import cc.catface.clibrary.util.net.http.okhttp.IOH;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -33,8 +32,6 @@ import okhttp3.Response;
  */
 
 public class OHT implements IOH {
-
-    private final static String TAG = OHT.class.getSimpleName();
 
     private static OHHandler mOHHandler = new OHHandler(Looper.getMainLooper());
 

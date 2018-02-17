@@ -50,10 +50,16 @@
         android:text="server"/>
 
     <Button
-        android:id="@+id/bt_"
+        android:id="@+id/bt_music"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="待"/>
+        android:text="音乐"/>
+
+    <Button
+        android:id="@+id/bt_iflytek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="讯飞语音"/>
 
 
 </LinearLayout>

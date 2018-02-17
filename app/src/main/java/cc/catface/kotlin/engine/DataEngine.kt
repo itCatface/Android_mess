@@ -1,6 +1,6 @@
 package cc.catface.kotlin.engine
 
-import cc.catface.clibrary.d
+import cc.catface.clibrary.util.extension.d
 import cc.catface.clibrary.project.yiyuan.Constant
 import cc.catface.kotlin.domain.*
 import com.google.gson.Gson

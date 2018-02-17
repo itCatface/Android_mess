@@ -48,7 +48,7 @@ class ServerActivity : BaseActivity(R.layout.activity_server) {
     }
 
 
-    private fun int2IpAddr(ip: Int) = ((ip and 0xFF).toString() + "" + (ip shr 8 and 0xFF) + "" + (ip shr 16 and 0xFF) + "" + (ip shr 24 and 0xFF))
+    private fun int2IpAddr(ip: Int) = ((ip and 0xFF).toString() + "." + (ip shr 8 and 0xFF) + "." + (ip shr 16 and 0xFF) + "." + (ip shr 24 and 0xFF))
 
 
     /* 退出需停止server or --> java.net.BindException: bind failed: EADDRINUSE (Address already in use) */

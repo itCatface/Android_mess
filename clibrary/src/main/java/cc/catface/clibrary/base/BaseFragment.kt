@@ -9,7 +9,7 @@ import android.view.ViewGroup
 /**
  * Created by catfaceWYH --> tel|wechat|qq 130 128 92925
  */
-abstract class BaseFragment(val layoutId: Int) : Fragment() {
+abstract class BaseFragment(private val layoutId: Int) : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 

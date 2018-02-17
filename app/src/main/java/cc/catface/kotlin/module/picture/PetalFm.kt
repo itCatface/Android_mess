@@ -1,7 +1,6 @@
 package cc.catface.kotlin.module.picture
 
 import android.animation.Animator
-import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.app.Dialog
 import android.graphics.Color
@@ -9,19 +8,17 @@ import android.os.Bundle
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.DecelerateInterpolator
 import android.widget.Button
 import android.widget.ImageView
 import cc.catface.clibrary.base.BaseFragment
-import cc.catface.clibrary.showSnackbar
-import cc.catface.clibrary.t
+import cc.catface.clibrary.util.extension.showSnackbar
+import cc.catface.clibrary.util.extension.t
 import cc.catface.kotlin.R
 import cc.catface.kotlin.domain.Petal
 import cc.catface.kotlin.engine.DataEngine
 import cc.catface.kotlin.engine.adapters.PetalAdapter
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.dialog_query.view.*
+import kotlinx.android.synthetic.main.dialog_petal.view.*
 import kotlinx.android.synthetic.main.fragment_petal.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.find
@@ -115,50 +112,30 @@ class PetalFm : BaseFragment(R.layout.fragment_petal) {
         })
         (rv_pic.adapter as PetalAdapter).setOnItemLongClickListener(object : PetalAdapter.OnItemLongClickListener {
             override fun onLongClick(view: View) {
-                activity!!.t("长按图片了:$view")
+                t("长按图片了:$view")
             }
         })
     }
 
 
     private fun dialog(url: String) {
-
-        val view = View.inflate(context, R.layout.dialog_query, null)
+        val view = View.inflate(context, R.layout.dialog_petal, null)
         val dialog = Dialog(context, R.style.Dialog_Fullscreen)
         dialog.setContentView(view)
         dialog.setCancelable(true)
-
-        val animAlpha = ObjectAnimator.ofFloat(view, "alpha", 0f, 1.0f)
-        val animRotation = ObjectAnimator.ofFloat(view, "rotation", -25f, 20f, -15f, 10f, -5f, 2f, 0f)
-        animRotation.interpolator = DecelerateInterpolator()
-
-        val animSet = AnimatorSet()
-        animSet.duration = 600
-        animSet.playTogether(animAlpha, animRotation)
-        animSet.start()
-
-
-
         dialog.show()
-
 
         val iv: ImageView = view.find(R.id.iv_dialog)
         val bt_dialog_like: Button = view.find(R.id.bt_dialog_like)
 
         Glide.with(this).load(url).into(iv)
 
+        ObjectAnimator.ofFloat(iv, "alpha", 0f, 1.0f).start()
+
         iv.setOnClickListener {
-
-
-            val animAlpha = ObjectAnimator.ofFloat(view, "alpha", 1f, 0.2f)
-            val animRotation = ObjectAnimator.ofFloat(view, "rotation", 0f, 5f, -10f, 15f, -20f, 25f, -30f)
-            animRotation.interpolator = AccelerateDecelerateInterpolator()
-
-            val animSet = AnimatorSet()
-            animSet.duration = 600
-            animSet.playTogether(animAlpha, animRotation)
-            animSet.start()
-            animSet.addListener(object : Animator.AnimatorListener {
+            val animAlpha = ObjectAnimator.ofFloat(iv, "alpha", 1f, 0f)
+            animAlpha.start()
+            animAlpha.addListener(object : Animator.AnimatorListener {
                 override fun onAnimationRepeat(p0: Animator?) {
 
                 }
@@ -179,14 +156,12 @@ class PetalFm : BaseFragment(R.layout.fragment_petal) {
 
         iv.setOnLongClickListener {
             view.ll_dialog.visibility = View.VISIBLE
-            val anim = ObjectAnimator.ofFloat(view.ll_dialog, "alpha", 0f, 1f)
-            anim.duration = 300
-            anim.start()
+            ObjectAnimator.ofFloat(view.ll_dialog, "alpha", 0f, 1f).start()
             true
         }
 
         bt_dialog_like.setOnClickListener {
-            activity!!.t("喜欢")
+            t("喜欢")
         }
     }
 
