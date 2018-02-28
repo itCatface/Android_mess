@@ -62,4 +62,17 @@
         android:text="讯飞语音"/>
 
 
+    <Button
+        android:id="@+id/bt_install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静默安装"/>
+
+    <Button
+        android:id="@+id/bt_intentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IntentService第一个案例"/>
+
+
 </LinearLayout>

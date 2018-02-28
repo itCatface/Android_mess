@@ -5,7 +5,6 @@ import android.app.Application
 import android.content.Context
 import android.support.multidex.MultiDex
 import cc.catface.clibrary.util.extension.notNullSingleValue
-import cc.catface.iflytek.recognizer.RecognizerT
 import cc.catface.kotlin.domain.dao.Dao
 import cc.catface.kotlin.domain.greendao_gen.NoteDao
 
@@ -34,7 +33,7 @@ class App : Application() {
         ctx = applicationContext
         noteDao = getNoteDao()
 
-        RecognizerT.init(ctx)
+//        RecognizerT.init(ctx)
     }
 
     private fun getNoteDao() = Dao.noteDao(ctx!!)

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Kotlin</string>
     <string name="title_activity_kybase">KYBaseActivity</string>
+    <string name="title_activity_install2">InstallActivity2</string>
 
 
 </resources>

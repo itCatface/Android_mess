@@ -6,6 +6,8 @@ import cc.catface.clibrary.util.extension.startIntent
 import cc.catface.kotlin.R
 import cc.catface.kotlin.module.function.ad.AdActivity
 import cc.catface.kotlin.module.function.iflytek.IflytekActivity
+import cc.catface.kotlin.module.function.install.InstallActivity
+import cc.catface.kotlin.module.function.intentservice.IntentServiceActivity
 import cc.catface.kotlin.module.function.server.ServerActivity
 import cc.catface.kotlin.module.music.MusicActivity
 import cc.catface.kotlin.module.note.NoteActivity
@@ -69,6 +71,8 @@ class FirstFm : BaseFragment(R.layout.fragment_first) {
         bt_server.setOnClickListener { startIntent(Intent(context, ServerActivity::class.java)) }
         bt_music.setOnClickListener { startIntent(Intent(context, MusicActivity::class.java)) }
         bt_iflytek.setOnClickListener { startIntent(Intent(context, IflytekActivity::class.java)) }
+        bt_install.setOnClickListener { startIntent(Intent(context, InstallActivity::class.java)) }
+        bt_intentService.setOnClickListener { startIntent(Intent(context, IntentServiceActivity::class.java)) }
     }
 
 

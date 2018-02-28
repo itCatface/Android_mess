@@ -40,7 +40,7 @@ dependencies {
     compile project(':indexlib')
     compile project(':iflytek')
     implementation files('libs/nanohttpd-2.3.1-SNAPSHOT.jar')
-
     /*64k*/
     compile 'com.android.support:multidex:1.0.1'
+    implementation files('libs/RootTools.jar')
 }

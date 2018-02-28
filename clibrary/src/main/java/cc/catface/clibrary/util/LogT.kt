@@ -12,7 +12,7 @@ object LogT {
 
     val DEBUG = true
 
-    val DEFAULT_TAG = "catface_debug"
+    val DEFAULT_TAG = "wyh"
 
 
     /* 1. Log */

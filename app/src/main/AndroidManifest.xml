@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="cc.catface.kotlin">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cc.catface.kotlin">
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission
         android:name="android.permission.WRITE_APN_SETTINGS"
-        tools:ignore="ProtectedPermissions"/>
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:name=".navigator.App"
@@ -18,33 +18,34 @@
         android:theme="@style/AppTheme">
         <activity android:name=".navigator.activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".module.weather.PmActivity"/>
-        <activity android:name=".module.note.NoteActivity"/>
-        <activity android:name=".module.music.MusicActivity"/>
-        <activity android:name=".module.music.MusicPlayingActivity"/>
+        <activity android:name=".module.weather.PmActivity" />
+        <activity android:name=".module.note.NoteActivity" />
+        <activity android:name=".module.music.MusicActivity" />
+        <activity android:name=".module.music.MusicPlayingActivity" />
 
         <service
             android:name=".module.music.service.MusicService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
 
-        <activity android:name=".module.weather.ChoseCityNormalActivity"/>
-        <activity android:name=".module.weather.ChoseCityWeixinActivity"/>
-        <activity android:name=".module.weather.ChoseCityMeituanActivity"/>
-        <activity android:name=".module.kaiyan.ui.KYMainActivity">
-        </activity>
-        <activity android:name=".module.kaiyan.ui.KYSplashActivity">
-        </activity>
-        <activity android:name=".module.function.ad.AdActivity">
-        </activity>
-        <activity android:name=".module.function.server.ServerActivity"/>
-        <activity android:name=".module.function.iflytek.IflytekActivity">
-        </activity>
+        <activity android:name=".module.weather.ChoseCityNormalActivity" />
+        <activity android:name=".module.weather.ChoseCityWeixinActivity" />
+        <activity android:name=".module.weather.ChoseCityMeituanActivity" />
+        <activity android:name=".module.kaiyan.ui.KYMainActivity" />
+        <activity android:name=".module.kaiyan.ui.KYSplashActivity" />
+        <activity android:name=".module.function.ad.AdActivity" />
+        <activity android:name=".module.function.server.ServerActivity" />
+        <activity android:name=".module.function.iflytek.IflytekActivity" />
+        <activity android:name=".module.function.DialogActivity" />
+        <activity android:name=".module.function.install.InstallActivity" />
+        <activity android:name=".module.function.intentservice.IntentServiceActivity" />
+
+        <service android:name="cc.catface.kotlin.module.function.intentservice.TestIntentService" />
     </application>
 
 </manifest>

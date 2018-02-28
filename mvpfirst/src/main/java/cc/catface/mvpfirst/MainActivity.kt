@@ -1,5 +1,6 @@
 package cc.catface.mvpfirst
 
+import android.content.Intent
 import android.text.SpannableStringBuilder
 import cc.catface.clibrary.base.BaseActivity
 import cc.catface.clibrary.util.extension.t
@@ -23,6 +24,8 @@ class MainActivity : BaseActivity(R.layout.activity_main), IUserView {
     private fun initEvent() {
         bt_save.setOnClickListener { mUserPresenter?.saveUser(getID(), getUsername(), getAge()) }
         bt_load.setOnClickListener { mUserPresenter?.loadUser(getID()) }
+
+        bt_progress.setOnClickListener { startActivity(Intent(this, PbActivity::class.java)) }
     }
 
 
